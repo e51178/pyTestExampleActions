@@ -33,9 +33,3 @@ jobs:
         cat ~/.kube/config
       env:
         CHANGE_MINIKUBE_NONE_USER: true
-    - uses: actions/setup-python@v1
-      with:
-        python-version: '3.10'
-    - run: |
-        pip install tox
-        make tests
