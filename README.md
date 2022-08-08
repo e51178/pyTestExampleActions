@@ -1,5 +1,5 @@
 # [`hello-test`](#hello-test)
 
-![Lint and CI](https://github.com/elsdes3/hello-test/workflows/CI/badge.svg) [![Known Vulnerabilities](https://snyk.io/monitor/github/elsdes3/hello-test/badge.svg)](https://snyk.io/monitor/github/elsdes3/hello-test)
+![Lint and CI](https://github.com/elsdes3/hello-test/workflows/CI/badge.svg)
 
-A dummy repository for minor miscellaneous tasks only.
+A dummy repository for miscellaneous tasks only.

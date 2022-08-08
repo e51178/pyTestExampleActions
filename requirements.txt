@@ -1,9 +1,9 @@
 flask==1.1.2
 jupyter==1.0.0
-numpy==1.19.4
-requests==2.25.0
-pytest==6.2.1
+numpy==1.12.4
+requests==2.28.1
+pytest==7.1.2
 pytest-repeat==0.9.1
-kubetest==0.9.3
-kubernetes==12.0.1
+kubetest==0.9.5
+kubernetes==24.2.0
 rsa>=4.1
