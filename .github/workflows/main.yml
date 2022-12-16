@@ -9,17 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-python@v1
-      with:
-        python-version: '3.10'
-    - run: pip install tox
-    - run: make lint
   build:
-    needs: lint
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -31,6 +21,7 @@ jobs:
     - name: Interact with the cluster
       run: |
         export KUBECONFIG=$KUBECONFIG:$HOME/.kube/config
+        echo $KUBECONFIG
         kubectl cluster-info
         ls -la ~/.kube
         cat ~/.kube/config
